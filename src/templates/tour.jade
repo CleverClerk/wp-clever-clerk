@@ -1,0 +1,37 @@
+.tour(data-id=id)
+  .Name name
+  .price
+    span.amount= price
+    | 
+    span.price-basis= price_basis
+  .short-description= short_description
+  .description
+    = description
+  .email= email
+  .phone-number= phone_number
+  .start-location= address
+  .availability
+    span.start-time= start_time
+    |  to 
+    span.end-time= end_time
+    ul.days_offered
+      caption Days Offered
+      each day in days_offered
+        li= day
+
+  if tour_company
+    .tour-company
+      .name= tour_company.name
+      .descrption= tour_company.description
+      .phone-number= tour_company.phone_number
+      .address= tour_company.address
+      .city= tour_company.city
+      .state= tour_company.state
+      .zip= tour_company.zip
+  if pictures.length > 0
+    .pictures
+      each picture in pictures
+        .picture
+          img.thumb(src=picture.thumb, alt=picture.label, data-fullsize=picture.url)
+          .label=picture.label
+

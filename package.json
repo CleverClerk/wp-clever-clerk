@@ -1,0 +1,20 @@
+{
+  "name": "wp-clever-clerk",
+  "version": "0.0.0",
+  "description": "readme.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": "true",
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~10.2.1",
+    "jade": "~1.9.2",
+    "jadeify": "~4.3.0",
+    "jquery": "~2.1.4",
+    "uglifyify": "~3.0.1",
+    "moment": "~2.10.3"
+  }
+}

@@ -24,8 +24,10 @@ please contact cleverclerk to add additional data from api to plugin.
 == Development
 
 dependencies
-  
-  npm install -g browserify watchify
+
+  ```
+    npm install -g browserify watchify
+  ```
 
 building the javascript
   
@@ -37,6 +39,10 @@ building the javascript
     browserify src/*.js -t jadeify -t uglifyify -o build/cleverclerk.min.js
   ```
 
+working in development
 
+  ```
+    watchify src/*.js -t jadeify -t uglifyify -o build/cleverclerk.min.js
+  ```
 
 

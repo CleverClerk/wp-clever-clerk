@@ -181,7 +181,7 @@
           ), $atts )
         );
         $this->_enqueue();
-        $data_attributes = array();
+        $data_attributes = "";
         foreach ($this->options as $key => $attribute) {
           $data_attributes .= ' ' . esc_attr( 'data-' . $key ) . '="' . esc_attr( $attribute ) . '"';
         }
